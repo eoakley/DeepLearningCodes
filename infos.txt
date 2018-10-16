@@ -1,0 +1,30 @@
+LBP
+Bag of Sifts
+GIST
+SPD
+Color histogram
+https://www.cs.tau.ac.il/~wolf/papers/genrestyle.pdf
+
+  3.4.1. Bagging In order to increase accuracy and stability of our classifier we introduced the bagging technique as described by Cazenave (2017) for the game of Go. It consists in averaging the output of different predictions produced by the model on several variations of input data. As shown by Cazenave, bagging can increase overall accuracy without degrading the efficiency of the classifier too much. In case of art style recognition, we generate two variations of the input data (the picture) by flipping the picture horizontally, (intuitively, the style of a picture should be invariant to horizontal flip) and average the results. 
+http://proceedings.mlr.press/v77/lecoutre17a/lecoutre17a.pdf
+
+
+  NAO FAZER DISTORÇÔES?
+  2017). 4.4.2. Distortion Encouraged by the positive results on bagging, we tried to augment our dataset by generating artificial data. However, the results reported in Table 3 show a mild improvement on Top-1 results and a deterioration according to Top-3 and Top-5 metrics. Behind the data augmentation, there is an assumption that a particular image will remain of the same class if we apply a distortion to it. This is true for most image recognition tasks : for example, if the task is to recognize animals, a cat should be detected in an image even if it is upsidedown. However, this is not true for all style of paintings. We remark that the images in our dataset are perfectly centered without any background or foreground around the painting. Hence, with such a clean dataset, the data augmentation may not be ne 
+    
+    
+    DenseNet: https://github.com/flyyufelix/DenseNet-Keras
+
+ResNet-101: https://gist.github.com/flyyufelix/65018873f8cb2bbe95f429c474aa1294
+
+ResNet-152: https://gist.github.com/flyyufelix/7e2eafb149f72f4d38dd661882c554a6
+
+SqueezeNet: https://github.com/rcmalli/keras-squeezenet
+
+Inception v4: https://github.com/titu1994/Inception-v4/releases
+
+VGG16: https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3
+
+VGG19: https://gist.github.com/baraldilorenzo/8d096f48a1be4a2d660d
+
+Other Keras models: https://keras.io/applications/
